@@ -16,7 +16,7 @@ const App: React.FC = () => {
           <Switch>
             <Layout>
               {publicRoutes.map((route) => (
-                <Route {...route} />
+                <Route key={route.path} {...route} />
               ))}
             </Layout>
           </Switch>

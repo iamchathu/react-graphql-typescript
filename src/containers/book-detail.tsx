@@ -1,4 +1,6 @@
 import React from 'react';
+import { gql } from 'apollo-boost';
+import { useQuery } from '@apollo/react-hooks';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
@@ -6,8 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { useParams } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import { gql } from 'apollo-boost';
-import { useQuery } from '@apollo/react-hooks';
 import Loading from '../components/loading';
 
 const useStyles = makeStyles((theme) => ({

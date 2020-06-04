@@ -11,7 +11,7 @@ export const publicRoutes = [
     parent: null,
   },
   {
-    path: '/book/:bookId',
+    path: '/books/:bookId',
     exact: true,
     component: () => <BookDetail />,
     parent: null,

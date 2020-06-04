@@ -3,6 +3,8 @@ import MAppBar from '@material-ui/core/AppBar';
 import { makeStyles, Theme } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import { Link } from '@material-ui/core';
+import { Link as RouterLink } from 'react-router-dom';
 
 const useStyles = makeStyles((theme: Theme) => ({
   appBar: {
@@ -20,11 +22,20 @@ const AppBar: React.FC = () => {
 
   return (
     <>
-      <MAppBar position='static'>
+      <MAppBar position='fixed'>
         <Toolbar>
-          <Typography variant='h6' className={classes.title}>
-            Bookstore
-          </Typography>
+          <Link
+            component={RouterLink}
+            to='/'
+            style={{
+              color: 'inherit',
+              textDecoration: 'none',
+              cursor: 'hand',
+            }}>
+            <Typography variant='h3' className={classes.title}>
+              Bookstore
+            </Typography>
+          </Link>
         </Toolbar>
       </MAppBar>
       <div className={classes.offset} />

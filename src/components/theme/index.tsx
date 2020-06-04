@@ -17,6 +17,10 @@ const getTheme = () => {
       MuiCssBaseline: {
         '@global': {
           a: {
+            '&:hover': {
+              color: 'inherit',
+              textDecoration: 'none',
+            },
             color: 'inherit',
             textDecoration: 'none',
           },

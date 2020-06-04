@@ -10,7 +10,7 @@ import { publicRoutes } from './routes';
 import theme from './components/theme';
 
 const client = new ApolloClient({
-  uri: 'https://localhost:4000/graphql',
+  uri: 'http://localhost:4000/graphql',
 });
 
 const App: React.FC = () => {
